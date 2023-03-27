@@ -4,47 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
-      <div>
-        <h1>Library Project</h1>
+    <main>
+      <div class="all">
         <div id="library">
+          <div id="form-div">
+            <h1>Library Project</h1>
+            <form id="form" action="">
+              <input type="text" id="title" name="title" >
+              <label for="title">Title</label>
+              <input type="text" id="author" name="author">
+              <label for="author">Author</label>
+              <input id="read-checkbox" name="read-checkbox" type="checkbox">
+              <label for="read-checkbox">Read</label>
+              <button type="submit" id="submit">Add</button>
+            </form>
+          </div>
           <!-- Add table here -->
-          <table id="table" style="min-width: 680px; margin: 2rem">
+          <div class="thead">
+          <table id="table" >
             <thead>
-              <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Read</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
+              <tr id="thead-tr">
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Read</th>
+                  
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- <tr>
+                  <td>Name of the Wind</td>
+                  <td>Patrick Rothfuss</td>
+                  <td>
                   <input
                     type="checkbox"
                     name="read"
                     id="readLibraryCheckbox"
                     checked
                     disabled
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    />
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
         </div>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main {
+  width: 90%;
+}
+
+.all {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(113, 92, 159) 0%,
+    rgb(125, 108, 171) 56%,
+    rgb(99, 117, 189) 100%
+  );
+  border-radius: 20px;
+}
+
+#form-div {
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 30px 30px 30px;
+  margin: 40px auto;
+}
+
+#form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form label {
+  margin: 0 10px 10px 10px;
+}
+
+#submit {
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.thead {
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
